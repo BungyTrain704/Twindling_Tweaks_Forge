@@ -58,11 +58,6 @@ public class ModConfiguredFeatures {
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
-        register(context, RED_MAPLE_SPAWN_KEY, Feature.RANDOM_SELECTOR,
-                new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(
-                        placedFeatures.getOrThrow(ModPlacedFeatures.RED_MAPLE_CHECKED_KEY),
-                        0.5F)), placedFeatures.getOrThrow(ModPlacedFeatures.RED_MAPLE_CHECKED_KEY)));
-
 
         register(context, CATALPA_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CATALPA_LOG.get()),
@@ -71,10 +66,6 @@ public class ModConfiguredFeatures {
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
-        register(context, CATALPA_SPAWN_KEY, Feature.RANDOM_SELECTOR,
-                new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(
-                        placedFeatures.getOrThrow(ModPlacedFeatures.CATALPA_CHECKED_KEY),
-                        0.5F)), placedFeatures.getOrThrow(ModPlacedFeatures.CATALPA_CHECKED_KEY)));
 
         register(context, OVERWORLD_ALLUMINITE_ORE_KEY, Feature.ORE, new OreConfiguration(OVERWORLD_ALLUMINITE_ORES.get(), 20));
         register(context, OVERWORLD_RAW_ALLUMINITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(OVERWORLD_RAW_ALLUMINITE_BLOCKS.get(), 9));

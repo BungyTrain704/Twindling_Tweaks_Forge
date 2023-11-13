@@ -40,14 +40,10 @@ public class ModPlacedFeatures {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
 
-        register(context, RED_MAPLE_CHECKED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RED_MAPLE_KEY),
-                List.of(PlacementUtils.filteredByBlockSurvival(ModBlocks.RED_MAPLE_SAPLING.get())));
         register(context, RED_MAPLE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RED_MAPLE_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
                         ModBlocks.RED_MAPLE_SAPLING.get()));
 
-        register(context, CATALPA_CHECKED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CATALPA_KEY),
-                List.of(PlacementUtils.filteredByBlockSurvival(ModBlocks.CATALPA_SAPLING.get())));
         register(context, CATALPA_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CATALPA_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
                         ModBlocks.CATALPA_SAPLING.get()));
