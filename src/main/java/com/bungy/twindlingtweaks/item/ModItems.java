@@ -110,7 +110,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> UNFILTERED_SUGAR = ITEMS.register("unfiltered_sugar",
-            () -> new Item(new Item.Properties().food(ModFoods.UNFILTERED_SUGAR)));
+            () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> SALAD_TOPPINGS = ITEMS.register("salad_toppings",
             () -> new Item(new Item.Properties()));
