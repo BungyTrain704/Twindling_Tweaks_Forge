@@ -4,7 +4,6 @@ import com.bungy.twindlingtweaks.TwindlingTweaks;
 import com.bungy.twindlingtweaks.block.ModBlocks;
 import com.bungy.twindlingtweaks.item.custom.ModArmorItem;
 import com.bungy.twindlingtweaks.item.custom.ModArmorItem2;
-import com.bungy.twindlingtweaks.item.custom.FuelItem;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -110,8 +109,8 @@ public class ModItems {
     public static final RegistryObject<Item> ALLUMINITE_ROD_SHARD = ITEMS.register("alluminite_rod_shard",
             () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> ROUGH_SUGAR = ITEMS.register("rough_sugar",
-            () -> new Item(new Item.Properties().food(ModFoods.ROUGH_SUGAR)));
+    public static final RegistryObject<Item> UNFILTERED_SUGAR = ITEMS.register("unfiltered_sugar",
+            () -> new Item(new Item.Properties().food(ModFoods.UNFILTERED_SUGAR)));
 
     public static final RegistryObject<Item> SALAD_TOPPINGS = ITEMS.register("salad_toppings",
             () -> new Item(new Item.Properties()));

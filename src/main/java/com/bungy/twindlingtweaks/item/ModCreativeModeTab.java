@@ -44,7 +44,7 @@ public class ModCreativeModeTab {
                                 pOutput.accept(ModItems.OBSIDIAN_PICKAXE.get());
                                 pOutput.accept(ModItems.OBSIDIAN_SHOVEL.get());
                                 pOutput.accept(ModItems.OBSIDIAN_HOE.get());
-                                pOutput.accept(ModItems.ROUGH_SUGAR.get());
+                                pOutput.accept(ModItems.UNFILTERED_SUGAR.get());
                                 pOutput.accept(ModItems.SALAD_TOPPINGS.get());
                                 pOutput.accept(ModItems.SALAD.get());
                                 pOutput.accept(ModItems.RANCH_BOTTLE.get());
@@ -91,7 +91,7 @@ public class ModCreativeModeTab {
                                     pOutput.accept(ModBlocks.CATALPA_FENCE_GATE.get());
                                     pOutput.accept(ModBlocks.REINFORCED_OBSIDIAN.get());
                                     pOutput.accept(ModBlocks.OBSIDIAN_FORGER.get());
-                                    pOutput.accept(ModBlocks.ROUGH_SUGAR_BLOCK.get());
+                                    pOutput.accept(ModBlocks.UNFILTERED_SUGAR_BLOCK.get());
                                     pOutput.accept(ModBlocks.SUGAR_BLOCK.get());
                                     pOutput.accept(ModBlocks.ALLUMINITE_BLOCK.get());
                                     pOutput.accept(ModBlocks.RAW_ALLUMINITE_BLOCK.get());

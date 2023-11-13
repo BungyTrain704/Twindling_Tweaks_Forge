@@ -189,11 +189,11 @@ public class ModBlocks {
             () -> new ObsidianForgerBlock(BlockBehaviour.Properties.copy(ModBlocks.REINFORCED_OBSIDIAN.get()).strength(12F).explosionResistance(1200F).sound(SoundType.ANVIL)
                     .requiresCorrectToolForDrops()));
 
-    public static final RegistryObject<Block> ROUGH_SUGAR_BLOCK = registerBlock("rough_sugar_block",
+    public static final RegistryObject<Block> UNFILTERED_SUGAR_BLOCK = registerBlock("unfiltered_sugar_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).strength(0.5F)));
 
     public static final RegistryObject<Block> SUGAR_BLOCK = registerBlock("sugar_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).strength(0.4F)));
+            () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND).strength(0.4F)));
 
     public static final RegistryObject<Block> ALLUMINITE_BLOCK = registerBlock("alluminite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).strength(2F).sound(SoundType.BASALT)

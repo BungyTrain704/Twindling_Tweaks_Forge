@@ -19,5 +19,4 @@ public class ModFoods {
 
     public static final FoodProperties CUCUMBER = (new FoodProperties.Builder().nutrition(5).saturationMod(.8F).effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 1), 0.8F).build());
 
-    public static final FoodProperties ROUGH_SUGAR = (new FoodProperties.Builder().nutrition(1).saturationMod(.1F).effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 1), 0.8F).build());
 }
