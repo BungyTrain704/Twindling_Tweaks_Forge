@@ -10,11 +10,11 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    ALLUMINITE("alluminite", 28, new int[]{ 5, 7, 6, 4 }, 20,
+    ALLUMINITE("alluminite", 28, new int[]{ 5, 6, 6, 4 }, 20,
             SoundEvents.ARMOR_EQUIP_GOLD, 2.2f, 0.1f, () ->
             Ingredient.of(ModItems.REINFORCED_ALLUMINITE_INGOT.get())),
 
-    OBSIDIAN("obsidian", 42, new int[]{ 7, 9, 8, 6 }, 35,
+    OBSIDIAN("obsidian", 60, new int[]{ 3, 7, 7, 3 }, 35,
     SoundEvents.ARMOR_EQUIP_GOLD, 3.5f, 0.3f, () ->
             Ingredient.of(ModItems.REINFORCED_ALLUMINITE_INGOT.get()));
 
