@@ -67,8 +67,8 @@ public class ModConfiguredFeatures {
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
 
-        register(context, OVERWORLD_ALLUMINITE_ORE_KEY, Feature.ORE, new OreConfiguration(OVERWORLD_ALLUMINITE_ORES.get(), 20));
-        register(context, OVERWORLD_RAW_ALLUMINITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(OVERWORLD_RAW_ALLUMINITE_BLOCKS.get(), 9));
+        register(context, OVERWORLD_ALLUMINITE_ORE_KEY, Feature.ORE, new OreConfiguration(OVERWORLD_ALLUMINITE_ORES.get(), 14));
+        register(context, OVERWORLD_RAW_ALLUMINITE_BLOCK_KEY, Feature.ORE, new OreConfiguration(OVERWORLD_RAW_ALLUMINITE_BLOCKS.get(), 3));
         register(context, OVERWORLD_MUD_ORE_KEY, Feature.ORE, new OreConfiguration(OVERWORLD_MUD_ORES.get(), 16));
         register(context, OVERWORLD_SUGAR_ORE_KEY, Feature.ORE, new OreConfiguration(OVERWORLD_SUGAR_ORES.get(), 15));
     }
