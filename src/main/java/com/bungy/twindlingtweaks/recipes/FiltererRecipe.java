@@ -40,6 +40,11 @@ public class FiltererRecipe implements Recipe<SimpleContainer> {
         return output.copy();
     }
 
+
+    @Override
+    public NonNullList<Ingredient> getIngredients() {
+        return inputItems;
+    }
     @Override
     public boolean canCraftInDimensions(int pWidth, int pHeight) {
         return true;

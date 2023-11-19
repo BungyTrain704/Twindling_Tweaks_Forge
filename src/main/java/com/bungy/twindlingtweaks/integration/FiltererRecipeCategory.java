@@ -55,7 +55,7 @@ public class FiltererRecipeCategory implements IRecipeCategory<FiltererRecipe> {
 
     @Override
     public void setRecipe(IRecipeLayoutBuilder builder, FiltererRecipe recipe, IFocusGroup focuses) {
-        builder.addSlot(RecipeIngredientRole.INPUT, 80, 11).addIngredients(Ingredient.of((ModItems.UNFILTERED_SUGAR.get())));
+        builder.addSlot(RecipeIngredientRole.INPUT, 80, 11).addIngredients(recipe.getIngredients().get(0));
 
         builder.addSlot(RecipeIngredientRole.OUTPUT, 80, 59).addItemStack(recipe.getResultItem(null));
 

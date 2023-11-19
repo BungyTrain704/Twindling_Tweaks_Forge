@@ -23,8 +23,6 @@ public class JEITwindlingTweaksPlugin implements IModPlugin {
     public static RecipeType<FiltererRecipe> FILTERING_TYPE =
             new RecipeType<>(FiltererRecipeCategory.UID, FiltererRecipe.class);
 
-    public static RecipeType<FiltererRecipe> FILTERING_TYPE_2 =
-            new RecipeType<>(FiltererRecipeCategory2.UID, FiltererRecipe.class);
 
     @Override
     public ResourceLocation getPluginUid() {
@@ -38,9 +36,6 @@ public class JEITwindlingTweaksPlugin implements IModPlugin {
 
         registration.addRecipeCategories(new
                 FiltererRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
-
-        registration.addRecipeCategories(new
-                FiltererRecipeCategory2(registration.getJeiHelpers().getGuiHelper()));
     }
 
     @Override
@@ -53,7 +48,5 @@ public class JEITwindlingTweaksPlugin implements IModPlugin {
         List<FiltererRecipe> recipesFiltering = rm.getAllRecipesFor(FiltererRecipe.Type.INSTANCE);
         registration.addRecipes(FILTERING_TYPE, recipesFiltering);
 
-        List<FiltererRecipe> recipesFiltering2 = rm.getAllRecipesFor(FiltererRecipe.Type.INSTANCE);
-        registration.addRecipes(FILTERING_TYPE_2, recipesFiltering2);
     }
 }

@@ -187,7 +187,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> FILTERER = registerBlock("filterer",
-            () -> new FiltererBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(12F).explosionResistance(6.8F).sound(SoundType.STONE)
+            () -> new FiltererBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(4F).explosionResistance(6.8F).sound(SoundType.STONE)
                     .requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> UNFILTERED_SUGAR_BLOCK = registerBlock("unfiltered_sugar_block",
