@@ -5,6 +5,7 @@ import com.bungy.twindlingtweaks.block.entity.ModBlockEntities;
 import com.bungy.twindlingtweaks.item.ModCreativeModeTab;
 import com.bungy.twindlingtweaks.item.ModItems;
 import com.bungy.twindlingtweaks.recipes.ModRecipes;
+import com.bungy.twindlingtweaks.screen.FiltererScreen;
 import com.bungy.twindlingtweaks.screen.ModMenuTypes;
 import com.bungy.twindlingtweaks.screen.ObsidianForgerScreen;
 import com.bungy.twindlingtweaks.world.biomemods.ModBiomeModifiers;
@@ -66,6 +67,7 @@ public class TwindlingTweaks {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.RED_MAPLE_DOOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.RED_MAPLE_TRAPDOOR.get(), RenderType.cutout());
         MenuScreens.register(ModMenuTypes.OBSIDIAN_FORGER_MENU.get(), ObsidianForgerScreen::new);
+        MenuScreens.register(ModMenuTypes.FILTERER_MENU.get(), FiltererScreen::new);
     }
 
 

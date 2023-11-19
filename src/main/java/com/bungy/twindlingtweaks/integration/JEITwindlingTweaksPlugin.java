@@ -1,6 +1,7 @@
 package com.bungy.twindlingtweaks.integration;
 
 import com.bungy.twindlingtweaks.TwindlingTweaks;
+import com.bungy.twindlingtweaks.recipes.FiltererRecipe;
 import com.bungy.twindlingtweaks.recipes.ObsidianForgerRecipe;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
@@ -19,6 +20,12 @@ public class JEITwindlingTweaksPlugin implements IModPlugin {
     public static RecipeType<ObsidianForgerRecipe> FORGING_TYPE =
             new RecipeType<>(ObsidianForgerRecipeCategory.UID, ObsidianForgerRecipe.class);
 
+    public static RecipeType<FiltererRecipe> FILTERING_TYPE =
+            new RecipeType<>(FiltererRecipeCategory.UID, FiltererRecipe.class);
+
+    public static RecipeType<FiltererRecipe> FILTERING_TYPE_2 =
+            new RecipeType<>(FiltererRecipeCategory2.UID, FiltererRecipe.class);
+
     @Override
     public ResourceLocation getPluginUid() {
         return new ResourceLocation(TwindlingTweaks.MOD_ID, "jei_plugin");
@@ -28,6 +35,12 @@ public class JEITwindlingTweaksPlugin implements IModPlugin {
     public void registerCategories(IRecipeCategoryRegistration registration) {
         registration.addRecipeCategories(new
                 ObsidianForgerRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
+
+        registration.addRecipeCategories(new
+                FiltererRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
+
+        registration.addRecipeCategories(new
+                FiltererRecipeCategory2(registration.getJeiHelpers().getGuiHelper()));
     }
 
     @Override
@@ -36,5 +49,11 @@ public class JEITwindlingTweaksPlugin implements IModPlugin {
 
         List<ObsidianForgerRecipe> recipesForging = rm.getAllRecipesFor(ObsidianForgerRecipe.Type.INSTANCE);
         registration.addRecipes(FORGING_TYPE, recipesForging);
+
+        List<FiltererRecipe> recipesFiltering = rm.getAllRecipesFor(FiltererRecipe.Type.INSTANCE);
+        registration.addRecipes(FILTERING_TYPE, recipesFiltering);
+
+        List<FiltererRecipe> recipesFiltering2 = rm.getAllRecipesFor(FiltererRecipe.Type.INSTANCE);
+        registration.addRecipes(FILTERING_TYPE_2, recipesFiltering2);
     }
 }

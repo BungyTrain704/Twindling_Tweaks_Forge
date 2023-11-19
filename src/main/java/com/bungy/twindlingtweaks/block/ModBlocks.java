@@ -1,10 +1,7 @@
 package com.bungy.twindlingtweaks.block;
 
 import com.bungy.twindlingtweaks.TwindlingTweaks;
-import com.bungy.twindlingtweaks.block.custom.CucumberPlantBlock;
-import com.bungy.twindlingtweaks.block.custom.LettucePlantBlock;
-import com.bungy.twindlingtweaks.block.custom.ModFlammableRotatedPillarBlock;
-import com.bungy.twindlingtweaks.block.custom.ObsidianForgerBlock;
+import com.bungy.twindlingtweaks.block.custom.*;
 import com.bungy.twindlingtweaks.item.ModItems;
 import com.bungy.twindlingtweaks.world.feature.tree.CatalpaTreeGrower;
 import com.bungy.twindlingtweaks.world.feature.tree.RedMapleTreeGrower;
@@ -187,6 +184,10 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> OBSIDIAN_FORGER = registerBlock("obsidian_forger",
             () -> new ObsidianForgerBlock(BlockBehaviour.Properties.copy(ModBlocks.REINFORCED_OBSIDIAN.get()).strength(12F).explosionResistance(1200F).sound(SoundType.ANVIL)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> FILTERER = registerBlock("filterer",
+            () -> new FiltererBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(12F).explosionResistance(6.8F).sound(SoundType.STONE)
                     .requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> UNFILTERED_SUGAR_BLOCK = registerBlock("unfiltered_sugar_block",

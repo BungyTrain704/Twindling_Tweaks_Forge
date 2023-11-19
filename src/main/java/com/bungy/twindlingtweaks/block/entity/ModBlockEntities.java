@@ -2,6 +2,7 @@ package com.bungy.twindlingtweaks.block.entity;
 
 import com.bungy.twindlingtweaks.TwindlingTweaks;
 import com.bungy.twindlingtweaks.block.ModBlocks;
+import com.bungy.twindlingtweaks.block.entity.custom.FiltererBlockEntity;
 import com.bungy.twindlingtweaks.block.entity.custom.ObsidianForgerBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -17,6 +18,11 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("obsidian_forger_block_entity", () ->
                     BlockEntityType.Builder.of(ObsidianForgerBlockEntity::new,
                             ModBlocks.OBSIDIAN_FORGER.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<FiltererBlockEntity>> FILTERER_BLOCK_ENTITY =
+            BLOCK_ENTITIES.register("filterer_block_entity", () ->
+                    BlockEntityType.Builder.of(FiltererBlockEntity::new,
+                            ModBlocks.FILTERER.get()).build(null));
 
 
     public static void register(IEventBus eventBus) {

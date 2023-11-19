@@ -17,6 +17,9 @@ public class ModMenuTypes {
     public static final RegistryObject<MenuType<ObsidianForgerMenu>> OBSIDIAN_FORGER_MENU =
             registerMenuType(ObsidianForgerMenu::new, "obsidian_forger_menu");
 
+    public static final RegistryObject<MenuType<FiltererMenu>> FILTERER_MENU =
+            registerMenuType(FiltererMenu::new, "filterer_menu");
+
 
 
     private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory,

@@ -14,6 +14,9 @@ public class ModRecipes {
     public static final RegistryObject<RecipeSerializer<ObsidianForgerRecipe>> FORGING_SERIALIZER =
             SERIALIZERS.register("forging", () -> ObsidianForgerRecipe.Serializer.INSTANCE);
 
+    public static final RegistryObject<RecipeSerializer<FiltererRecipe>> FILTERING_SERIALIZER =
+            SERIALIZERS.register("filtering", () -> FiltererRecipe.Serializer.INSTANCE);
+
     public static void register(IEventBus eventBus) {
         SERIALIZERS.register(eventBus);
     }

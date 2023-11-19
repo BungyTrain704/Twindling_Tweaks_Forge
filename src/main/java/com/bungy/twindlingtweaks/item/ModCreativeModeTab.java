@@ -101,6 +101,7 @@ public class ModCreativeModeTab {
                                     pOutput.accept(ModBlocks.DEEPSLATE_SUGAR_ORE.get());
                                     pOutput.accept(ModBlocks.ALLUMINITE_ORE.get());
                                     pOutput.accept(ModBlocks.DEEPSLATE_ALLUMINITE_ORE.get());
+                                    pOutput.accept(ModBlocks.FILTERER.get());
                     })
                     .build());
 
